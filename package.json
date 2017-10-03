@@ -1,0 +1,47 @@
+{
+  "name": "timeoutify-async-function",
+  "version": "1.0.0",
+  "description": "A Node.js utility module that wraps an async function inside a timed-promise.",
+  "main": "index.js",
+  "scripts": {
+    "coverage": "nyc --reporter=html --reporter=text --reporter=text-summary --all --check-coverage --branches=100 --functions=100 --lines=100 --statements=100 -- mocha -c --require test/setup.js --recursive test/**/*.spec.js",
+    "lint": "eslint .",
+    "mocha": "mocha -c --reporter=list --require test/setup.js --recursive test/**/*.spec.js",
+    "start": "node index.js",
+    "test": "npm run lint && npm run coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FormidableLabs/node-timeoutify-async-function.git"
+  },
+  "keywords": [
+    "timeoutify",
+    "async",
+    "function",
+    "promise"
+  ],
+  "author": "Formidable Labs",
+  "contributors": [
+    {
+      "email": "mscottx88@gmail.com",
+      "name": "Michael P. Scott"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FormidableLabs/node-timeoutify-async-function/issues"
+  },
+  "homepage": "https://github.com/FormidableLabs/node-timeoutify-async-function#readme",
+  "devDependencies": {
+    "babel-eslint": "^8.0.1",
+    "chai": "^4.1.2",
+    "eslint": "^4.8.0",
+    "eslint-config-formidable": "^3.0.0",
+    "eslint-plugin-filenames": "^1.2.0",
+    "eslint-plugin-import": "^2.7.0",
+    "mocha": "^4.0.0",
+    "nyc": "^11.2.1",
+    "sinon": "^4.0.0",
+    "sinon-chai": "^2.14.0"
+  }
+}
